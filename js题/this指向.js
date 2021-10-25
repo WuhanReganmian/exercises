@@ -14,3 +14,34 @@ console.log((foo.bar = foo.bar)()); // 1
 console.log((false || foo.bar)()); // 1
 console.log((foo.bar, foo.bar)()); // 1
 // 参考 https://github.com/mqyqingfeng/Blog/issues/7
+
+
+function Foo(){
+	getName = function(){
+		console.log(1);					
+  };
+	return this
+}
+			
+function getName(){
+	console.log(5);
+}
+
+Foo().getName(); // 1
+
+
+function Foo(){
+  getName = function(){
+    console.log(1);					
+  };
+  return this;
+}
+
+Foo.prototype.getName = function(){
+  console.log(3);
+};
+
+function getName(){
+  console.log(5);
+};
+new Foo().getName() // 3
