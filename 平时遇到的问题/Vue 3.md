@@ -1,3 +1,6 @@
+# 打包过慢（Building module bundle for production）
+如果不需要支持IE浏览器，可以在`package.json`中`browserslist`的 或 `.browserslistrc`中 添加 `not ie 11`
+
 # Invalid VNode type: Symbol()
 组件打包node版本过高；或者开发者下包的node版本过高导致。
 
