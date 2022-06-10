@@ -5,3 +5,6 @@ const onlyMesh = new BABYLON.Mesh('onlyMesh');
 // .....
 gl.addIncludedOnlyMesh(onlyMesh)
 ```
+
+# 性能优化
+[链接][https://doc.babylonjs.com/divingDeeper/scene/optimize_your_scene]
