@@ -24,6 +24,16 @@ this.scene.autoClearDepthAndStencil = false; // 每帧不清除深层及模板�
 
 # 内网自定配置解压器目录
 ```
+    BABYLON.DracoCompression.Configuration = {
+      decoder: {
+        wasmUrl: `${window.location.origin}${commonUrl}babylonFile/draco_wasm_wrapper_gltf.js`,
+        wasmBinaryUrl: `${window.location.origin}${commonUrl}babylonFile/draco_decoder_gltf.wasm`,
+        fallbackUrl: `${window.location.origin}${commonUrl}babylonFile/draco_decoder_gltf.js`
+      }
+    }
+    BABYLON.BasisTools.JSModuleURL = `${window.location.origin}${commonUrl}babylonFile/basis_transcoder.js`
+    BABYLON.BasisTools.WasmModuleURL = `${window.location.origin}${commonUrl}babylonFile/basis_transcoder.wasm`
+
 BABYLON.MeshoptCompression.Configuration = {
   decoder: {
     url: `${window.location.origin}${commonUrl}babylonFile/meshopt_decoder.js`
