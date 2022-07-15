@@ -21,3 +21,18 @@ this.scene.meshes.forEach(m => {
 this.scene.autoClear = false; // 每帧不清除缓冲区
 this.scene.autoClearDepthAndStencil = false; // 每帧不清除深层及模板缓冲区
 ```
+
+# 内网自定配置解压器目录
+```
+BABYLON.MeshoptCompression.Configuration = {
+  decoder: {
+    url: `${window.location.origin}${commonUrl}babylonFile/meshopt_decoder.js`
+  }
+}
+// https://forum.babylonjs.com/t/ktx2-transcoder-support-progress/13960/14?u=compiledsuccessfull
+BABYLON.KhronosTextureContainer2.URLConfig.jsDecoderModule = `${window.location.origin}${commonUrl}babylonFile/babylon.ktx2Decoder.js`
+BABYLON.KhronosTextureContainer2.URLConfig.wasmUASTCToASTC = `${window.location.origin}${commonUrl}babylonFile/uastc_astc.wasm`
+BABYLON.KhronosTextureContainer2.URLConfig.wasmUASTCToBC7 = `${window.location.origin}${commonUrl}babylonFile/uastc_bc7.wasm`
+BABYLON.KhronosTextureContainer2.URLConfig.jsMSCTranscoder = `${window.location.origin}${commonUrl}babylonFile/msc_basis_transcoder.js`
+BABYLON.KhronosTextureContainer2.URLConfig.wasmMSCTranscoder = `${window.location.origin}${commonUrl}babylonFile/msc_basis_transcoder.wasm`
+```
