@@ -46,3 +46,6 @@ BABYLON.KhronosTextureContainer2.URLConfig.wasmUASTCToBC7 = `${window.location.o
 BABYLON.KhronosTextureContainer2.URLConfig.jsMSCTranscoder = `${window.location.origin}${commonUrl}babylonFile/msc_basis_transcoder.js`
 BABYLON.KhronosTextureContainer2.URLConfig.wasmMSCTranscoder = `${window.location.origin}${commonUrl}babylonFile/msc_basis_transcoder.wasm`
 ```
+
+# fps视角
+[链接](https://playground.babylonjs.com/#TIYKC2#2)
