@@ -13,7 +13,7 @@
 | Node 8 |	4.5.3+, <5.0 |
 | Node <8 |	<5.0 |
 
-[参考]([https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465](https://www.npmjs.com/package/node-sass))  
+[参考](https://www.npmjs.com/package/node-sass)  
 
 # vue-router动态添加的路由不能手动删除
 [参考](https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465)  
