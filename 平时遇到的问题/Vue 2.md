@@ -1,3 +1,18 @@
+# node-sass版本对应
+`尽量别用node-sass`  
+| NodeJS | Supported node-sass version |
+| Node 17 |	7.0+ |
+| Node 16 |	6.0+ |
+| Node 15 |	5.0+, <7.0 |
+| Node 14 |	4.14+ |
+| Node 13 |	4.13+, <5.0 |
+| Node 12 |	4.12+ |
+| Node 11 |	4.10+, <5.0 |
+| Node 10 |	4.9+, <6.0 |
+| Node 8 |	4.5.3+, <5.0 |
+| Node <8 |	<5.0 |
+[参考]([https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465](https://www.npmjs.com/package/node-sass))  
+
 # vue-router动态添加的路由不能手动删除
 [参考](https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465)  
 ```
